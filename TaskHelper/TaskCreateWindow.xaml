@@ -1,0 +1,20 @@
+﻿<Window x:Class="TaskHelper.TaskCreateWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TaskHelper"
+        mc:Ignorable="d"
+       Title="CreateTask" MaxHeight="450" MaxWidth="400" MinHeight="450" MinWidth="400">
+    <Grid>
+
+        <TextBlock Text="Описание задачи" FontSize="15" VerticalAlignment="Top" Margin="0,114,0,0"/>
+        <TextBox Name="TaskDescription" Text="" Margin="28,154,28,103"/>
+        <TextBlock Text="Название:" FontSize="15"  VerticalAlignment="Bottom" HorizontalAlignment="Left" Height="17" Margin="16,0,0,395" Width="71" RenderTransformOrigin="0.356,-1.451" />
+
+        <TextBox Name="Name" Text="" FontSize="13"  VerticalAlignment="Top" HorizontalAlignment="Center" Height="17" Margin="0,24,0,0" Width="150"/>
+
+
+        <Button Name="CreateTaskBtn" Content="Создать задачу" Click="CreateTaskBtn_Click" Height="25" Width="150" Margin="125,366,125,0" VerticalAlignment="Top"/>
+    </Grid>
+</Window>
