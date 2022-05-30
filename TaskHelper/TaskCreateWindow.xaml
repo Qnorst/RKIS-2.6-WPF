@@ -9,10 +9,10 @@
     <Grid>
 
         <TextBlock Text="Описание задачи" FontSize="15" VerticalAlignment="Top" Margin="0,114,0,0"/>
-        <TextBox Name="TaskDescription" Text="" Margin="28,154,28,103"/>
+        <TextBox Name="TaskDescriptionBox" Text="" Margin="28,154,28,103"/>
         <TextBlock Text="Название:" FontSize="15"  VerticalAlignment="Bottom" HorizontalAlignment="Left" Height="17" Margin="16,0,0,395" Width="71" RenderTransformOrigin="0.356,-1.451" />
 
-        <TextBox Name="Name" Text="" FontSize="13"  VerticalAlignment="Top" HorizontalAlignment="Center" Height="17" Margin="0,24,0,0" Width="150"/>
+        <TextBox Name="NameBox" Text="" FontSize="13"  VerticalAlignment="Top" HorizontalAlignment="Center" Height="17" Margin="0,24,0,0" Width="150"/>
 
 
         <Button Name="CreateTaskBtn" Content="Создать задачу" Click="CreateTaskBtn_Click" Height="25" Width="150" Margin="125,366,125,0" VerticalAlignment="Top"/>

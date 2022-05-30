@@ -59,3 +59,6 @@ C:\Users\Qnorst\Documents\My studies\My studies\МДК 05.02 РКИС2\Лаба 
 C:\Users\Qnorst\Documents\My studies\My studies\МДК 05.02 РКИС2\Лаба 2.7 ВПФКА\TaskHelper\obj\Debug\net6.0-windows\TakeTaskWindow.baml
 C:\Users\Qnorst\Documents\My studies\My studies\МДК 05.02 РКИС2\Лаба 2.7 ВПФКА\TaskHelper\obj\Debug\net6.0-windows\TaskCreateWindow.g.cs
 C:\Users\Qnorst\Documents\My studies\My studies\МДК 05.02 РКИС2\Лаба 2.7 ВПФКА\TaskHelper\obj\Debug\net6.0-windows\TaskCreateWindow.baml
+C:\Users\Qnorst\Documents\My studies\My studies\МДК 05.02 РКИС2\Лаба 2.7 ВПФКА\TaskHelper\obj\Debug\net6.0-windows\Interop.Microsoft.Office.Interop.Excel.dll
+C:\Users\Qnorst\Documents\My studies\My studies\МДК 05.02 РКИС2\Лаба 2.7 ВПФКА\TaskHelper\obj\Debug\net6.0-windows\Interop.Microsoft.Office.Interop.Word.dll
+C:\Users\Qnorst\Documents\My studies\My studies\МДК 05.02 РКИС2\Лаба 2.7 ВПФКА\TaskHelper\obj\Debug\net6.0-windows\TaskHelper.csproj.ResolveComReference.cache

@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using TaskHelper.Models;
 
 namespace TaskHelper
 {
@@ -22,7 +23,36 @@ namespace TaskHelper
         public TaskCreateWindow()
         {
             InitializeComponent();
+            User currentUser;
+            currentUser = Helper.userSession;
+            DataContext = currentUser;
         }
 
+        private void CreateTaskBtn_Click(object sender, RoutedEventArgs e)
+        {
+            string Name = NameBox.Text.Trim();
+            string Describtion = TaskDescriptionBox.Text.Trim();
+            int CreatorId = Helper.userSession.UserId;
+            int AcceptorId = Helper.userSession.UserId;
+            var PublicDate = DateTime.Now;
+            int StatusTaskId = 1;
+
+            Models.Task task = new Models.Task()
+            {
+                Name = Name,
+                Describtion = Describtion,                
+                PublicDate = PublicDate,
+                CreatorId = CreatorId,
+                AcceptorId = AcceptorId,
+                StatusTaskId = StatusTaskId,
+            };
+            Helper.db.Tasks.Add(task);
+            Helper.db.SaveChanges();
+
+            MessageBox.Show("Задача создана!");
+
+            new MenuWindow().Show();
+            this.Close();
+        }
     }
 }

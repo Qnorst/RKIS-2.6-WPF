@@ -36,9 +36,10 @@
                             <DataGridTextColumn Header="Статус" Width="100" Binding="{Binding StatusTask.Name}" CanUserSort="False"/>
                         </DataGrid.Columns>
                     </DataGrid>
-                    <Button Content="Выйти" Name="LogOutBtn" Click="LogOutBtn_Click" HorizontalAlignment="Left" Margin="118,301,0,0" VerticalAlignment="Top" Height="24" Width="82"/>
+                    <Button Content="Выйти" Name="LogOutBtn" Click="LogOutBtn_Click" HorizontalAlignment="Left" Margin="118,345,0,0" VerticalAlignment="Top" Height="24" Width="82"/>
                     <Button Grid.Column="2" Name="ChangeTaskStatusBtn" Click="ChangeTaskStatusBtn_Click" Content="Изменить статус задачи" HorizontalAlignment="Center" Margin="0,305,0,0" VerticalAlignment="Top" Height="25" Width="144"/>
                     <Button Grid.Column="2" Name="CreateTaskBtn" Click="CreateTaskBtn_Click" Content="Создать задание" HorizontalAlignment="Center" Margin="0,345,0,0" VerticalAlignment="Top" Height="24" Width="144"/>
+                    <Button Content="Создать отчет" Name="CreateReportBtn" Click="CreateReportBtn_Click" HorizontalAlignment="Left" Margin="118,305,0,0" VerticalAlignment="Top" Height="25" Width="82"/>
                 </Grid>
             </TabItem>
             <TabItem Header="Доступные задачи">
@@ -67,6 +68,24 @@
                         <DataGridTextColumn Header="Пользователь" Binding="{Binding Login}"/>
                     </DataGrid.Columns>
                 </DataGrid>
+            </TabItem>
+            <TabItem Header="Взятые задачи">
+                <Grid Grid.Column="5" Grid.Row="1">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="41*"/>
+                        <ColumnDefinition Width="356*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <DataGrid Name="TakenTasksDGrid" ColumnWidth="*" AutoGenerateColumns="False" CanUserAddRows="False" CanUserDeleteRows="False" IsReadOnly="True" Margin="52,66,52,66" MouseDoubleClick="OpenTasksDGrid_MouseDoubleClick" Grid.ColumnSpan="2" >
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Header="Номер" Binding="{Binding TaskId}" Width="50"/>
+                            <DataGridTextColumn Header="Название" Binding="{Binding Name}" Width="200"/>
+                            <DataGridTextColumn Header="Дата публикации" Binding="{Binding PublicDate}" Width="150"/>
+                            <DataGridTextColumn Header="Создал" Binding="{Binding Creator.Login}" Width="155"/>
+                            <DataGridTextColumn Header="Статус" Binding="{Binding StatusTask.Name}" Width="155"/>
+                        </DataGrid.Columns>
+                    </DataGrid>
+                </Grid>
             </TabItem>
             <TabItem Header="История выполненых задач">
                 <Grid Grid.Column="5" Grid.Row="1">
